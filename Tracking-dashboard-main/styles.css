@@ -1,0 +1,179 @@
+body {
+  background-color: hsl(226, 43%, 10%);
+  font-family: "Rubik", sans-serif;
+  color: #aaafb4;
+}
+
+/* ALL CARDS */
+
+.tiles {
+  position: absolute; /* allows centering of elements */
+  top: 15%; /* pushing all elements away from top of screen */
+  left: 0; /* remove fluid container and center the box */
+  right: 0; /* remove fluid container and center the box */
+  margin-left: auto; /* remove fluid container and center the box */
+  margin-right: auto; /* remove fluid container and center the box */
+}
+
+.card {
+  width: 18rem; /* Width of all cards */
+  padding-left: 15%; /* aligns elements on main card */
+  z-index: 2;
+}
+
+/* MAIN CARD */
+
+.main-card {
+  height: 550px; /* height of large tile */
+  margin-bottom: 30px; /* maintain distance when tiles are responsive */
+  max-width: 100%; /* keeps the cards within the grid containers */
+  position: relative;
+  background-color: transparent;
+}
+
+#main-card-body {
+  background-color: hsl(246, 80%, 60%);
+  position: absolute; /* ID to overide card body on large tile */
+  top: 0%;
+  left: 0;
+  right: 0;
+  bottom: 31%;
+  z-index: 2;
+}
+
+.rounded-circle {
+  border: 2px; /* adding rounded border to icon */
+}
+
+#main-name {
+  font-size: 46px;
+  font-weight: 300;
+  padding-left: 15%;
+  padding-top: 5%;
+}
+
+#main-subtitle {
+  color: #aaafb4;
+  font-weight: 400;
+  padding-left: 15%;
+  padding-top: 60%;
+}
+
+.list-group {
+  position: absolute;
+  bottom: 0; /* move list to bottom of card */
+  left: 0; /* move list to bottom of card */
+  right: 0; /* move list to bottom of card */
+  z-index: 1;
+}
+
+.time-selector {
+  color: white !important;
+  /* background-color: #393f90 !important; */
+}
+
+.list-group-item {
+  background-color: hsl(235, 46%, 20%);
+  color: hsl(235, 45%, 61%);
+  height: 65px;
+  padding-left: 15%; /* push text text */
+  padding-top: 30px;
+  font-size: 18px;
+}
+
+/* SMALL TILES */
+
+.small-tiles {
+  background-color: hsl(235, 46%, 20%);
+  height: 260px; /* height of small tiles */
+  margin-bottom: 30px; /* maintain distance when tiles are responsive */
+  max-width: 100%; /* keeps the cards within the grid containers */
+  overflow: hidden;
+}
+
+.tile-card-body {
+  background-color: hsl(235, 46%, 20%);
+}
+
+.card-body {
+  position: absolute;
+  top: 20%; /* sets overlay for mini tiles with display */
+  left: 0; /* sets overlay for mini tiles with display */
+  right: 0; /* sets overlay for mini tiles with display */
+  bottom: 0; /* sets overlay for mini tiles with display */
+  padding: 10% 0% 10% 15%;
+}
+
+.card-title {
+  color: white;
+  font-size: 18px;
+}
+
+.small-title {
+  padding-bottom: 12%; /* padding between activity & times spent */
+}
+
+.small-subtitle {
+  font-size: 56px;
+  font-weight: 300;
+  color: white;
+}
+
+/* INDIVIDUAL CARDS */
+#work {
+  background-color: hsl(15, 100%, 70%);
+}
+
+#exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+
+#play {
+  background-color: hsl(195, 74%, 62%);
+}
+
+#social {
+  background-color: hsl(264, 64%, 52%);
+}
+
+#study {
+  background-color: hsl(348, 100%, 68%);
+}
+
+#self-care {
+  background-color: hsl(43, 84%, 65%);
+}
+
+/* ICONS */
+
+.icons {
+  position: absolute;
+  right: 5px;
+  top: -10px;
+}
+
+.ellipsis-icon {
+  position: absolute;
+  top: 17%;
+  right: 10%;
+}
+
+/* IMAGES */
+
+.card-img-top {
+  position: absolute;
+  max-width: 35%; /* reduces image size */
+  height: auto; /* keeps size-lock */
+  margin: 8% 0% 8%;
+  border: 5px;
+  z-index: 3;
+}
+
+/* ATTRIBUTION */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(246, 80%, 60%);
+}
